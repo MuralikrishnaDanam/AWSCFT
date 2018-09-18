@@ -290,7 +290,7 @@
 
     "AWSRegionArch2AMI" : {
 
-      "us-east-1"        : {"PV64" : "ami-2a69aa47", "HVM64" : "ami-97785bed", "HVMG2" : "ami-0a6e3770"},
+      "us-east-1"        : {"PV64" : "ami-2a69aa47", "HVM64" : "ami-6871a115", "HVMG2" : "ami-0a6e3770"},
 
       "us-west-2"        : {"PV64" : "ami-7f77b31f", "HVM64" : "ami-28e07e50", "HVMG2" : "ami-ee15a196"},
 
@@ -356,8 +356,8 @@
         "Fn::Join" : [ " ", [
             "#!/bin/bash\n",
 			"yum install -y httpd\n",
-			"service enable httpd\n",
-			"service start httpd\n",
+			"systemctl enable httpd\n",
+			"systemctl start httpd\n",
 			"setenforce 0\n",
 			"echo Welcome to AWS-CFT-Krishna >> /var/www/html/index.html"
 			] ]
