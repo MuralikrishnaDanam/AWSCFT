@@ -9,7 +9,7 @@
     "InstanceType" : {
       "Description" : "EC2 instance specs configuration",
       "Type" : "String",
-      "Default" : "t2.micro",
+      "Default" : "t2.small",
       "AllowedValues" : ["t2.micro", "t2.small", "t2.medium"]
     }
   },
