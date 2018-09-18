@@ -356,8 +356,8 @@
         "Fn::Join" : [ " ", [
             "#!/bin/bash\n",
 			"yum install -y httpd\n",
-			"systemctl enable httpd\n",
-			"systemctl start httpd\n",
+			"service enable httpd\n",
+			"service start httpd\n",
 			"setenforce 0\n",
 			"echo Welcome to AWS-CFT-Krishna >> /var/www/html/index.html"
 			] ]
