@@ -1,6 +1,6 @@
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
-  "Description" : "Attach IAM Role to an EC2",
+  "Description" : "Attaching  IAM Role to an EC2 ",
   "Parameters" : {
     "KeyName" : {
       "Description" : "EC2 Instance SSH Key",
