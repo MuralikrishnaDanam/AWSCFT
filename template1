@@ -359,7 +359,7 @@
 			"systemctl enable httpd\n",
 			"systemctl start httpd\n",
 			"setenforce 0\n",
-			"echo Welcome to AWS-CFT Krishna >> /var/www/html/index.html"
+			"echo Welcome to AWS-CFT-Krishna >> /var/www/html/index.html"
 			] ]
     }
 }
